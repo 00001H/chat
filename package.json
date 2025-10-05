@@ -1,0 +1,8 @@
+{
+  "name": "aife",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

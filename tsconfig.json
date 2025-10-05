@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "esnext",
+    "module": "esnext",
+    "exactOptionalPropertyTypes": true,
+    "strict": true,
+    "skipDefaultLibCheck": true
+  },
+  "include": ["docs"]
+}

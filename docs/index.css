@@ -1,0 +1,58 @@
+html{
+    background-color: #454545;
+    font-size: x-large;
+    color: white;
+}
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 4px;
+    box-sizing: border-box;
+}
+#msgbox{
+    appearance: none;
+    background-color: #5a5a5a;
+    border: 1px solid darkgrey;
+    border-radius: 4px;
+    font-size: x-large;
+    color: white;
+    outline: none;
+    box-sizing: border-box;
+    padding: 4px;
+}
+#netstat{
+    align-self: center;
+    font-size: large;
+    &[data-netstate="idle"]{
+        color: #b5b5b5;
+    }
+    &[data-netstate="connecting"]{
+        color: gold;
+    }
+    &[data-netstate="connected"]{
+        color: #00dc00;
+    }
+    &[data-netstate="closed"]{
+        color: #ff3c3c;
+    }
+}
+#hist{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex-grow: 1;
+    font-family: monospace;
+}
+.message{
+    >label{
+        display: inline;
+        margin-right: 10px;
+    }
+    >span{
+        white-space: pre;
+    }
+}
