@@ -37,7 +37,7 @@ Commands:
                     case "p":
                         whisper = ""
                     case _:
-                        print("Unknown command. Type /? for help.")
+                        await conn.send(encode_message("SERVER","Unknown command. Type /? for help."))
             else:
                 if whisper:
                     if (dst := clients.get(whisper,None)) is not None:
