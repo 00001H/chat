@@ -54,6 +54,6 @@ body{
         margin-right: 10px;
     }
     >span{
-        white-space: pre;
+        white-space: pre-wrap;
     }
 }
