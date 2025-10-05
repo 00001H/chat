@@ -32,6 +32,7 @@ connection.addEventListener("message", (e) => {
         const message = u8dec.decode(e.data.slice(4 + nsrc));
         const mel = create_message(sender, message);
         hist.append(mel);
+        mel.scrollIntoView();
     }
 });
 msgbox.addEventListener("keyup", (e) => {

@@ -46,6 +46,7 @@ body{
     gap: 3px;
     flex-grow: 1;
     font-family: monospace;
+    overflow: auto;
 }
 .message{
     >label{

@@ -31,13 +31,13 @@ connection.addEventListener("message",(e: MessageEvent<ArrayBuffer>) => {
         const message = u8dec.decode(e.data.slice(4+nsrc));
         const mel = create_message(sender,message);
         hist.append(mel);
+        mel.scrollIntoView();
     }
 });
 msgbox.addEventListener("keyup",(e) => {
     if(e.key === "Enter"){
         if(msgbox.value.length > 0){
             connection.send(msgbox.value);
-
             msgbox.value = "";
         }
     }
